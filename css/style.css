@@ -770,6 +770,12 @@ color: #FFFFFF;
   color: #454545;
   margin-bottom: 0%;
 }
+.profile__info__redact{
+  width: 19px;
+  height: 19px;
+  margin-top: 15px;
+  margin-left: 25px;
+}
 .profile__text__info__0{
   margin-top: 4%;
 }
@@ -793,6 +799,7 @@ color: #FFFFFF;
   color: #545454;
   margin-top: 15px;
   margin-left: 10px;
+  border:0;
 }
 .profile__info__human2{
   font-family: 'PT Sans';

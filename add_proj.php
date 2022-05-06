@@ -53,36 +53,48 @@
 		<section class="profile">
 			<div class="wrapper__profile">
 				<div class="profile__wrapper">
-					<div class="profile__text_info">
-						<h1 class="profile__title">
-								Личный кабинет
-						</h1>
-					</div>
-				</div>
-				<div class="profile__wrapper__img">
-					<div class="profile__img">
-						<h1 class="profile__title">
-								Персональные данные
-						</h1>
-						<form action="redact_all.php" method="POST">	
-							<div class="profile__info">
-								<h1 class="profile__info__human">ФИ:</h1> <p class="profile__info__human2 pp_i_r1"><?php echo $stroka['name']?> &nbsp <?php echo $stroka['surname']?></p> <input class="profile__info__human i_p_i_r1" style="display: none;" type="" value="<?php echo $stroka['name']?>" name="name"><img class="profile__info__redact p_i_r1" src="img/pencil.png">
+					<div class="profile__text">
+						<form action="add_project.php" method="POST">
+							<h1 class="login__title">
+								Создать страницу
+							</h1>
+							<p class="login__subtitle">
+								Название страницы
+							</p>
+							<input class="login__input" type="" name="name" placeholder="Название">
+							<p class="login__subtitle">
+								Тематика
+							</p>
+							<input class="login__input" type="" name="category" placeholder="Тематика">
+							<p class="login__subtitle">
+								Краткое описание 
+							</p>
+							<input class="login__input" name="s_description" placeholder="Краткое описание">
+							<p class="login__subtitle">
+								Описание 
+							</p>
+							<input class="login__input" name="description" placeholder="Описание">
+							<input style="display: none;" type="" name="img" value="img/add.png">
+							<p class="login__subtitle">
+								Район
+							</p>
+							<input class="login__input" name="district" placeholder="Район">
+							<input style="display: none;" type="" name="img" value="img/add.png">
+							<input style="display: none;" type="" name="no" value="no">
+							<div class="login__button__register">
+								<button class="login__button_or">
+									Создать
+								</button>
 							</div>
-							<div class="profile__info">
-								<h1 class="profile__info__human">Почта:</h1> <p class="profile__info__human2 pp_i_r2"><?php echo $stroka['email']?></p> <input class="profile__info__human i_p_i_r2" style="display: none;" type="" value="<?php echo $stroka['email']?>" name="email"><img class="profile__info__redact p_i_r2" src="img/pencil.png">
-							</div>
-							<div class="profile__info">
-								<h1 class="profile__info__human">Номер:</h1> <p class="profile__info__human2 pp_i_r3"><?php echo $stroka['phone']?></p> <input class="profile__info__human i_p_i_r3" style="display: none;" type="" value="<?php echo $stroka['phone']?>" name="phone"><img class="profile__info__redact p_i_r3" src="img/pencil.png">
-							</div>
-							<div class="profile__info">
-								<h1 class="profile__info__human">Район:</h1> <p class="profile__info__human2 pp_i_r4"><?php echo $stroka['district']?></p><input class="profile__info__human i_p_i_r4" style="display: none;" type="" value="<?php echo $stroka['district']?>" name="district"> <img class="profile__info__redact p_i_r4" src="img/pencil.png">
-							</div>
-							<button class="p_i_r_btn" style="display: none;">сохранить</button>
 						</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+	<!-- intro end -->
+	<!-- contacts end -->
+	</main>
 	<!-- intro end -->
 	<script type="text/javascript">
 		let p_i_r1 = document.querySelector('.p_i_r1');
@@ -119,6 +131,5 @@
 			p_i_r_btn.style.display = 'block';
 		}
 	</script>
-	</main>
 </body>
 </html>
