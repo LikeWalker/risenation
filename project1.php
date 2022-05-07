@@ -4,12 +4,18 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="http://fonts.cdnfonts.com/css/b612" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<title>Republic</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
+	<?php
+		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
+        $query = mysqli_query($con, "SELECT * FROM projects");
+        $stroka = $query->fetch_assoc();
+	?>
 	<!-- header start -->
 	<header class="header__main">
 			<div class="header__wrapper">
@@ -55,37 +61,22 @@
 	</header>
 	<!-- header end -->
 	<main class="main">
-		<!-- login start -->
-		<section class="login">
-			<div class="wrapper__login">
-				<div class="login__wrapper">
-					<div class="login__text">
-						<form action="check.php" method="POST">
-							<h1 class="login__title">
-								Вход
-							</h1>
-							<p class="login__subtitle">
-								Ваша почта
-							</p>
-							<input class="login__input" type="" name="email" placeholder="Почта">
-							<p class="login__subtitle">
-								Ваш пароль
-							</p>
-							<input class="login__input" type="password" name="password" placeholder="Пароль">
-							<div class="login__button__register">
-								<button class="login__button_or">
-									&ensp; Войти &ensp;
-								</button>
-								<a href="register.php" class="register__link_or">Нет аккаунта?</a>
-							</div>
-						</form>
-					</div>
-				</div>	
+	<!-- service start -->
+		<div class="wrapper_art">
+	<!-- new start -->
+			<div style="padding: 20px; display: flex; flex-wrap: wrap; align-items: flex-end;">
+				<h2 class="service__title ">
+					<?php echo $stroka['name'];?>
+				</h2>
 			</div>
-		</section>
-	<!-- end -->
-	</main>
-	<script type="text/javascript"></script>
+			<div class="project_wrapper">
+				<p class="project_text">
+					<?php echo $stroka['description']?>
+				</p>
+				<iframe style="margin-top: 5%;" width="100%" height="505" src="<?php echo $stroka['yt__link']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	<!-- intro end -->
 	</main>
 </body>
 </html>

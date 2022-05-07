@@ -13,11 +13,21 @@
 	<!-- header start -->
 	<header class="header__main">
 			<div class="header__wrapper">
-				<div class="header__menu">
-					<a href="#" class="header__logo-link">
-						<img src="img/menu.png" class="header__logo-link-picture menu__btn">
-						</img>
+				<div class="burger-menu">
+					<a href="#" class="burger-menu__button">
+						<span class="burger-menu__lines"></span>
 					</a>
+					<nav class="burger-menu__nav">
+						<a href="attraction.php" class="burger-menu__link">1 Интересные места РС(Я) </a>
+						<a href="person.php" class="burger-menu__link">2 Личности</a>
+						<a href="kid_attractions.php" class="burger-menu__link">3 Достопримечательности</a>
+						<a href="creative.php" class="burger-menu__link">4 Творчество</a>
+						<a href="quests.php" class="burger-menu__link">5 Развлечения </a>
+						<a href="arhiv.php" class="burger-menu__link">6 Архив </a>
+					</nav>
+					<div class="burger-menu__overlay"></div>
+					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+					<script src="js/script.js"></script>
 				</div>
 				<div class="header__logo">
 					<a href="main.php" class="header__logo-link">
@@ -31,10 +41,10 @@
 							<a href="info.php" class="header__link">Мероприятия</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link impd1">Районы</a>
+							<a href="districts.php" class="header__link impd1">Районы</a>
 						</li>
 						<li class="header__item">
-							<a href="" class="header__link impd1">Проекты</a>
+							<a href="projects.php" class="header__link impd1">Проекты</a>
 						</li>
 						<li class="header__item">
 							<a href="login.php" class="header__link">Вход</a>
@@ -74,7 +84,7 @@
 					</div>
 				</div>
 				<div class="service__card">
-					<div class="service__card__pic" style="margin-left: 55px;">
+					<div class="service__card__pic" style="margin-left: 60px;">
 						<img src="img/bike.png" class="service__card__thumb">
 						<p class="service__card__desc">
 							Велосипедная гонка «Салют Победы» пройдет из Покровска в Якутск 8 мая
@@ -110,7 +120,6 @@
 			</div>
 	<!-- service end -->
 	<!-- new start -->
-
 			<h2 class="service__title section__title">
 				Новое
 			</h2>
@@ -140,14 +149,28 @@
 					</div>
 				</div>
 			</div>
+			<h2 class="service__title section__title">
+				Мероприятия
+			</h2>
+			<div class="service__cards">
+				<div class="service__card">
+					<div class="service__card__pic">
+						<img src="img/parad.png" class="service__card__thumb">
+						<p class="service__card__desc">
+							Парад 9 мая
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper_contacts">
+				<div class="contact__info">
+					<img src="img/Контакты.png" class="">
+				</div>
+			</div>
 		</div>
 	<!-- new end -->
 	<!-- info start -->
-		<div class="contacts">
-			<div class="contact__info">
-				<img src="img/Контакты.png" class="">
-			</div>
-		</div>
+		
 		<div class="map">
           <a class="dg-widget-link" href="http://2gis.ru/yakutsk/firm/7037402698858785/center/129.75309491157535,62.028111066440104/zoom/15?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Якутска</a><div class="dg-widget-link"><a href="http://2gis.ru/yakutsk/firm/7037402698858785/photos/7037402698858785/center/129.75309491157535,62.028111066440104/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/yakutsk/center/129.755657,62.029757/zoom/15/routeTab/rsType/bus/to/129.755657,62.029757╎Айыы Кыhата, Якутская национальная городская гимназия?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Айыы Кыhата, Якутская национальная городская гимназия</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":100 + '%',"height":215,"borderColor":"#a3a3a3","pos":{"lat":62.028111066440104,"lon":129.75309491157535,"zoom":15},"opt":{"city":"yakutsk"},"org":[{"id":"7037402698858785"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
         </div>

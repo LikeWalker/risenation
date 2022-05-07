@@ -54,38 +54,11 @@
 			</div>
 	</header>
 	<!-- header end -->
+	<!-- intro start -->
 	<main class="main">
-		<!-- login start -->
-		<section class="login">
-			<div class="wrapper__login">
-				<div class="login__wrapper">
-					<div class="login__text">
-						<form action="check.php" method="POST">
-							<h1 class="login__title">
-								Вход
-							</h1>
-							<p class="login__subtitle">
-								Ваша почта
-							</p>
-							<input class="login__input" type="" name="email" placeholder="Почта">
-							<p class="login__subtitle">
-								Ваш пароль
-							</p>
-							<input class="login__input" type="password" name="password" placeholder="Пароль">
-							<div class="login__button__register">
-								<button class="login__button_or">
-									&ensp; Войти &ensp;
-								</button>
-								<a href="register.php" class="register__link_or">Нет аккаунта?</a>
-							</div>
-						</form>
-					</div>
-				</div>	
-			</div>
-		</section>
-	<!-- end -->
-	</main>
-	<script type="text/javascript"></script>
+		<div class="wrapper">
+			
+		</div>
 	</main>
 </body>
 </html>
