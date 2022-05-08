@@ -12,11 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
-	<?php
-		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
-        $query = mysqli_query($con, "SELECT * FROM art WHERE (id='1')");
-        $stroka = $query->fetch_assoc();
-	?>
 	<!-- header start -->
 	<header class="header__main">
 			<div class="header__wrapper">
@@ -68,12 +63,15 @@
 	<!-- new start -->
 			<div style="padding: 20px; display: flex; flex-wrap: wrap; align-items: flex-end;">
 				<h2 class="service__title ">
-					<?php echo $stroka['name'];?>
+					Арсен Томский стал выпускником Стэнфорда
 				</h2>
 			</div>
 			<div class="project_wrapper">
 				<p class="project_text">
-					<?php echo $stroka['description']?>
+					Технологический предприниматель из Якутии стал выпускником Stanford Graduate School of Business. Об этом Арсен Томский сообщил на своей странице в инстаграме.
+					Stanford GSB много лет делит первые места в основных рейтингах лучших бизнес-школ мира вместе с Harvard Business School. Средний процент поступления в бизнес-школу не превышает семи процентов. Стэнфорд, наряду с университетом Санта-Клара, являются опорными вузами для технологических компаний Кремниевой долины в Калифорнии. Кампус Стэнфорда расположен рядом 
+					с городом Пало-Альто в самом центре Кремниевой долины, которая возникла и развилась вокруг этого университета во второй половине XX века.
+					«Стар Тим» (Star Team) – некоммерческий образовательный проект «Синет Спарк», нацеленный на подготовку способных школьников Якутии к поступлению в ведущие вузы мира с последующей оплатой их обучения из специального эндаумент-фонда из личных средств Арсена Томского. В ближайшее время будет произведено расширение участников программы. Анонс будет опубликован на Ykt.Ru и на сайте программы Star Team во второй половине августа.
 				</p>
 				<iframe style="margin-top: 5%;" width="100%" height="505" src="<?php echo $stroka['video']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>

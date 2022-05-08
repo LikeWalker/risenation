@@ -12,11 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
-	<?php
-		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
-        $query = mysqli_query($con, "SELECT * FROM art WHERE (id='1')");
-        $stroka = $query->fetch_assoc();
-	?>
 	<!-- header start -->
 	<header class="header__main">
 			<div class="header__wrapper">
@@ -68,12 +63,16 @@
 	<!-- new start -->
 			<div style="padding: 20px; display: flex; flex-wrap: wrap; align-items: flex-end;">
 				<h2 class="service__title ">
-					<?php echo $stroka['name'];?>
+					Посмертную медаль якутского красноармейца, найденную поисковиками, передали родственникам
 				</h2>
 			</div>
 			<div class="project_wrapper">
 				<p class="project_text">
-					<?php echo $stroka['description']?>
+					Посмертную медаль якутского красноармейца Сивцева Ивана Федоровича, найденную поисковиками, передали родственникам. Вручение состоялось в рамках торжественного онлайн-мероприятия «По волне памяти», посвященного военным песням Великой Отечественной войны.
+					Как отметил министр по делам молодежи и социальным коммуникациям Петр Шамаев, святой долг молодежи — помнить о подвигах дедов и прадедов, которые смогли обеспечить нам мирное небо над головой. Работа поискового отряда «Застава Святого Ильи Муромца» направлена 
+					именно на эти цели и достойна благодарности, отметил он, передав реликвию родственникам красноармейца.
+					По данным властей, в республике 859 человек занимаются поисковой работой. В частности, этой весной группа якутян приняла участие в работе весенней межрегиональной поисково-мемориальной экспедиции «Ржевский выступ». Группа из восьми студентов и двух руководителей проводила «Вахту памяти» в Тверской области, в результате поисковой раб0ты найдены останки пяти солдат.
+
 				</p>
 				<iframe style="margin-top: 5%;" width="100%" height="505" src="<?php echo $stroka['video']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>

@@ -28,7 +28,8 @@
 						<a href="kid_attractions.php" class="burger-menu__link">3 Достопримечательности</a>
 						<a href="creative.php" class="burger-menu__link">4 Творчество</a>
 						<a href="quests.php" class="burger-menu__link">5 Развлечения </a>
-						<a href="arhiv.php" class="burger-menu__link">6 Архив </a>
+						<a href="culture.php" class="burger-menu__link">6 Культура Якутии </a>
+						<a href="arhiv.php" class="burger-menu__link">7 Архив </a>
 					</nav>
 					<div class="burger-menu__overlay"></div>
 					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -63,25 +64,27 @@
 	<!-- service start -->
 		<div class="wrapper_art">
 	<!-- new start -->
-			<h2 class="service__title section__title">
-				Личности
-			</h2>
+			<div style="padding: 20px; display: flex; flex-wrap: wrap; align-items: flex-end;">
+				<h2 class="service__title ">
+					Личности
+				</h2>
+			</div>
 			<div class="service__cards">
 				<?php 
 		 		//цикл начинается
 		 		for($i=0;$i< $query->num_rows ;$i++){
 		 			$stroka = $query->fetch_assoc();
 	 			?>
-				<a style="text-decoration: 0;" href="<?php echo $stroka["link"];?>">
 				<div class="service__card">
+					<a style="text-decoration: 0;" href="<?php echo $stroka["link"];?>">
 					<div class="service__card__pic">
 						<img src="img/<?php echo $stroka["img"];?>" class="service__card__thumb">
 						<p class="service__card__desc">
 							<?php echo $stroka["name"];?>
 						</p>
 					</div>
+					</a>
 				</div>
-				</a>
 				<?php 
 					}
 				?>

@@ -78,7 +78,7 @@
 
 
 .burger-menu__nav {
-  padding-top: 80px;
+  padding-top: 0px;
   position: fixed;
   z-index: 20;
   display: flex;
@@ -315,6 +315,22 @@ color: #FFFFFF;
 .intro__button:hover, .intro__button:focus, .intro__button:active{
   background: #232222;
 }
+.new__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 22px;
+  height: 250px;
+}
+.new__card__pic{
+  margin-bottom: 0px;
+  position: relative;
+}
+.new__card{
+  height: 250px;
+}
+.new__link{
+  height: 250px;
+}
 /* intro end */
 /* services start */
 .service__card__pic{
@@ -392,6 +408,22 @@ color: #FFFFFF;
   color: #0093C9;
   text-decoration: 0;
   margin-left: 25%;
+  margin-bottom: 5%;
+  padding: 1%;
+  width: 211.09px;
+  height: 47.39px;
+  text-align: center;
+}
+.person__title{
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  border: 2px solid #0093C9;
+  color: #0093C9;
+  text-decoration: 0;
+  margin-left: 56%;
   margin-bottom: 5%;
   padding: 1%;
   width: 211.09px;
@@ -481,25 +513,6 @@ color: #FFFFFF;
 .benefits__wrap:last-child{
   margin-bottom: 100px;
 }
-.benefit__title{
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-
-  color: #454545;
-  margin-bottom: 6%;
-}
-.benefit__description{
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #454545;
-  margin-bottom: 18px;
-}
 .benefit__pic{
   margin-left: 200px;
 }
@@ -516,7 +529,8 @@ color: #FFFFFF;
   margin-top: 5%;
 }
 .contact__info{
-  margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 20%;
 }
 /* contact end */
 /* login start */
@@ -1144,4 +1158,45 @@ color: #454545;
   line-height: 26px;
   color: #333333;
   width: 100%;
+  margin-left: 0;
+}
+.none{
+  display: none;
+}
+.test_text{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.district__title{
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #333333;
+  margin-bottom: 45px;
+}
+.fun__title{
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  border: 2px solid #0093C9;
+  color: #0093C9;
+  text-decoration: 0;
+  margin-left: 51%;
+  margin-bottom: 5%;
+  padding: 1%;
+  width: 211.09px;
+  height: 47.39px;
+  text-align: center;
 }

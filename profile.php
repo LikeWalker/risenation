@@ -29,7 +29,8 @@
 						<a href="kid_attractions.php" class="burger-menu__link">3 Достопримечательности</a>
 						<a href="creative.php" class="burger-menu__link">4 Творчество</a>
 						<a href="quests.php" class="burger-menu__link">5 Развлечения </a>
-						<a href="arhiv.php" class="burger-menu__link">6 Архив </a>
+						<a href="culture.php" class="burger-menu__link">6 Культура Якутии </a>
+						<a href="arhiv.php" class="burger-menu__link">7 Архив </a>
 					</nav>
 					<div class="burger-menu__overlay"></div>
 					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -90,7 +91,7 @@
 							<div class="profile__info">
 								<h1 class="profile__info__human">Район:</h1> <p class="profile__info__human2 pp_i_r4"><?php echo $stroka['district']?></p><input class="profile__info__human i_p_i_r4" style="display: none;" type="" value="<?php echo $stroka['district']?>" name="district"> <img class="profile__info__redact p_i_r4" src="img/pencil.png">
 							</div>
-							<button class="p_i_r_btn" style="display: none;">сохранить</button>
+							<button class="p_i_r_btn login__button_or" style="display: none;">сохранить</button>
 						</form>
 					</div>
 				</div>

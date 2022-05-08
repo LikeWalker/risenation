@@ -14,7 +14,7 @@
 <body>
 	<?php
 		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
-        $query = mysqli_query($con, "SELECT * FROM art WHERE (id='1')");
+        $query = mysqli_query($con, "SELECT * FROM culture WHERE (id='5')");
         $stroka = $query->fetch_assoc();
 	?>
 	<!-- header start -->
@@ -80,5 +80,11 @@
 		</div>
 	<!-- intro end -->
 	</main>
+	<script>
+  		AOS.init();
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+		
+	</script>
 </body>
 </html>

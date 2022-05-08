@@ -14,7 +14,7 @@
 <body>
 	<?php
 		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
-        $query = mysqli_query($con, "SELECT * FROM art WHERE (id='1')");
+        $query = mysqli_query($con, "SELECT * FROM persons WHERE (id='3')");
         $stroka = $query->fetch_assoc();
 	?>
 	<!-- header start -->

@@ -12,11 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
-	<?php
-		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
-        $query = mysqli_query($con, "SELECT * FROM art WHERE (id='1')");
-        $stroka = $query->fetch_assoc();
-	?>
 	<!-- header start -->
 	<header class="header__main">
 			<div class="header__wrapper">
@@ -68,12 +63,19 @@
 	<!-- new start -->
 			<div style="padding: 20px; display: flex; flex-wrap: wrap; align-items: flex-end;">
 				<h2 class="service__title ">
-					<?php echo $stroka['name'];?>
+					Возложение цветов к памятнику Якутскому снайперу и мемориалу «СОЛДАТ ТУЙМААДЫ»
 				</h2>
 			</div>
 			<div class="project_wrapper">
 				<p class="project_text">
-					<?php echo $stroka['description']?>
+					Якутяне возложили 7 мая, в преддверии Дня Победы, живые цветы к памятнику якутскому снайперу и мемориальному комплексу «Солдат Туймаады» в столице республики, передает телеканал «Якутия 24» со ссылкой на пресс-службу главы и правительства региона.
+					Участники церемонии почтили память героев фронта и тыла, погибших солдат, без вести пропавших минутой молчания.
+					В мероприятии приняли участие вице-премьер правительства республики Ольга Балабкина, вице-спикер парламента региона Виктор Губарев, мэр 
+					города Евгений Григорьев, руководители ведомств, жители и гости столицы.
+					Абсолютный победитель республиканского конкурса «Учитель года» в 2014 году и финалист всероссийского этапа в 2015-м, учитель истории и обществознания Артур Моисеев провел для 200 учеников школ города «Урок мужества».
+					Памятник собирательному образу якутского снайпера установили 7 мая 2020 года по поручению главы республики Айсена Николаева. В мемориальном комплексе «Солдат Туймаады» увековечены имена более 20 тысяч участников Великой Отечественной войны.
+
+
 				</p>
 				<iframe style="margin-top: 5%;" width="100%" height="505" src="<?php echo $stroka['video']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="http://fonts.cdnfonts.com/css/b612" rel="stylesheet">
@@ -14,7 +13,7 @@
 <body>
 	<?php
 		$con = mysqli_connect('127.0.0.1:3306', 'root','','final_hack');
-        $query = mysqli_query($con, "SELECT * FROM art WHERE (id='1')");
+        $query = mysqli_query($con, "SELECT * FROM projects WHERE (id='3')");
         $stroka = $query->fetch_assoc();
 	?>
 	<!-- header start -->
@@ -75,7 +74,7 @@
 				<p class="project_text">
 					<?php echo $stroka['description']?>
 				</p>
-				<iframe style="margin-top: 5%;" width="100%" height="505" src="<?php echo $stroka['video']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe style="margin-top: 5%;" width="100%" height="505" src="<?php echo $stroka['yt__link']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	<!-- intro end -->
